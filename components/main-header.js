@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.logo}>
-        <Image src={logo.src} alt="Let's Eat" width={100} height={100} />
-        Let's Eat
+        <Image src={logo} alt="Let&apos;s Eat" width={100} height={100} priority />
+        Let&apos;s Eat
       </Link>
       <nav className={styles.nav}>
         <ul>
