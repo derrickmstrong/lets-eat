@@ -1,6 +1,5 @@
 import Header from '@/components/main-header';
 import './globals.css';
-import HeaderBackground from '@/components/main-header-background';
 
 export const metadata = {
   title: 'Let\'s Eat',
@@ -12,7 +11,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body suppressHydrationWarning={true}>
         <Header />
-        <HeaderBackground />
         {children}
       </body>
     </html>
