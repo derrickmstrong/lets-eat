@@ -1,21 +1,8 @@
 import ImagePicker from "@/components/meals/image-picker";
 import styles from "./page.module.css";
+import { shareMeal } from "@/lib/actions";
 
 const ShareMeal = () => {
-  const shareMeal = async (formData) => {
-    "use server"; // This function should only be run on the server
-    const meal = {
-      title: formData.get("title"),
-      summary: formData.get("summary"),
-      instructions: formData.get("instructions"),
-      image: formData.get("image"),
-      creator: formData.get("name"),
-      creator_email: formData.get("email"),
-    };
-    console.log(meal);
-    // Save the meal to the database
-    // return { redirect: { destination: "/meals", permanent: false } };
-  };
   return (
     <>
       <header className={styles.header}>
